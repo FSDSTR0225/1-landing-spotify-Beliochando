@@ -8,7 +8,7 @@ body {
     font-family: 'CircularSpotifyText', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #db2e2e;
+    background-color: #121212;
 }
 
 .container {
@@ -47,7 +47,7 @@ body {
 .navbar-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 50px;
     padding: 0;
 }
 
@@ -75,14 +75,19 @@ body {
     text-align: left;
     color: white;
     background: linear-gradient(to bottom, #ef77a1, transparent);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
     padding: 40px 20px;
-    overflow: hidden; 
+    background-position: top center; /* Empieza más arriba de la sección */
+    position: relative; /* Para mover la sección hacia arriba */
+    top: -60px;
 }
 
 .hero-img {
     position: absolute;
     top: 60px;
     right: 0;
+    width: 42%;
     height: auto;
     z-index: 0;
     pointer-events: none;
@@ -100,15 +105,15 @@ body {
     max-width: 550px;
     width: 100%;
     text-align: left;
-    margin: 20px 0;
+    margin: 60px 0;
 }
 
 .hero .content h1 {
-    font-size: 52px;
+    font-size: 50px;
     font-weight: 700;
     margin: 10px 0;
     letter-spacing: -2px;
-    line-height: 1;
+    line-height: 0.9;
 }
 
 .hero .content p {
@@ -117,17 +122,18 @@ body {
     font-style: normal;
     margin: 10px 0;
     letter-spacing: 0px;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 .hero .content .oferta-info {
     background-color: #2a2a2a;
-    padding: 2px 8px;
+    padding: 0px 12px;
     border-radius: 2px;
     display: flex;
     gap: 10px;
     align-items: center;
     width: fit-content;
+    margin-top: 20px;
 }
 
 .hero .content .oferta-info img {
@@ -137,34 +143,34 @@ body {
 
 .hero .content .btn-start, .hero .btn-plans {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 15px 25px;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
     text-align: center;
     transition: all 0.3s ease;
     border: none;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
 .hero .content .btn-start {
-    background-color: white;
+    background-color: #ef77a1;
     color: black;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .hero .content .btn-plans {
-    background-color: #1DB954;
-    color: white;
-    border: 2px solid #1DB954;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .hero .content .btn-start:hover {
     background-color: black;
     color: white;
-    border: 2px solid white;
+    border: 2px solid #2A2A2A;
 }
 
 .hero .content .btn-plans:hover {
@@ -172,5 +178,26 @@ body {
     border: 2px solid #1A9A4D;
 }
 
+.hero .content .conditions {
+    max-width: 400px;
+    font-size: 11px;
+    color: white;
+    margin-top: 0px;
+    text-align: left;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.hero .content .conditions .conditions-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.hero .content .conditions .conditions-link:hover {
+    text-decoration: underline;
+}
 
 /* Siente diferencia */
