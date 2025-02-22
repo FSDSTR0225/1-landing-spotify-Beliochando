@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Asegura que el padding y el margin no afecten al tamaño total */
+    box-sizing: border-box; 
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'CircularSpotifyText', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #db2e2e;
@@ -26,8 +26,8 @@ body {
     background-color: black;
     padding: 15px 0;
     width: 100%;
-    position: relative; /* Asegura que el z-index funcione */
-    z-index: 10; /* Más alto que la imagen del hero */
+    position: relative;
+    z-index: 10;
 }
 
 .navbar-container {
@@ -35,7 +35,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -55,7 +55,7 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .navbar-links a:hover {
@@ -71,17 +71,17 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alineación a la izquierda */
+    align-items: flex-start; 
     text-align: left;
     color: white;
     background: linear-gradient(to bottom, #ef77a1, transparent);
     padding: 40px 20px;
-    overflow: hidden; /* Evita desbordamientos de la imagen */
+    overflow: hidden; 
 }
 
 .hero-img {
     position: absolute;
-    top: 60px; /* Ajusta este valor según el tamaño del navbar */
+    top: 60px;
     right: 0;
     height: auto;
     z-index: 0;
@@ -89,55 +89,51 @@ body {
 }
 
 .hero .content {
-    padding: 40px 20px;
-    max-width: 1200px;
+    padding: 20px 20px;
+    max-width: 1150px;
     width: 100%;
     margin: 0 auto;
-    align-items: flex-start; /* Alineación a la izquierda */
+    align-items: flex-start;
 }
 
 .hero .content > div {
-    max-width: 500px; /* Ajusta este valor según lo que necesites */
+    max-width: 550px;
     width: 100%;
     text-align: left;
-    margin: 20px 0; /* Separación tanto arriba como abajo */
+    margin: 20px 0;
 }
 
-.hero h1, .hero p {
+.hero .content h1 {
+    font-size: 52px;
+    font-weight: 700;
     margin: 10px 0;
+    letter-spacing: -2px;
+    line-height: 1;
 }
 
-.hero h1 {
-    font-size: 40px;
-}
-
-.hero p {
+.hero .content p {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
     margin: 10px 0;
-    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 1.4;
 }
 
-/* Estilos específicos para los elementos dentro de .hero */
 .hero .content .oferta-info {
     background-color: #2a2a2a;
-    padding: 4px 8px; /* Aumenta o ajusta el relleno según sea necesario */
+    padding: 2px 8px;
     border-radius: 2px;
     display: flex;
     gap: 10px;
     align-items: center;
-    width: fit-content; /* Esto hará que el contenedor se ajuste al tamaño del contenido */
+    width: fit-content;
 }
-  
-    .hero .content .oferta-info img {
-    width: 20px; /* Tamaño fijo para la imagen (ajústalo según lo que necesites) */
-    height: 20px; /* Tamaño fijo para la imagen */
-  }
-  
-    .hero .content .oferta-info p {
-    margin: 0; /* Elimina márgenes innecesarios */
-    font-size: 14px; /* Tamaño de fuente (ajusta si es necesario) */
-  }
-  
 
+.hero .content .oferta-info img {
+    width: 20px;
+    height: 20px;
+}
 
 .hero .content .btn-start, .hero .btn-plans {
     display: inline-block;
@@ -146,11 +142,11 @@ body {
     border-radius: 30px;
     font-weight: bold;
     font-size: 16px;
-    cursor: pointer; /* Esto hace que el cursor cambie a mano al pasar sobre el botón */
+    cursor: pointer;
     text-align: center;
     transition: all 0.3s ease;
-    border: none; /* Esto quita el borde predeterminado del botón */
-    margin: 15px 0; /* Separación tanto arriba como abajo */
+    border: none;
+    margin: 15px 0;
 }
 
 .hero .content .btn-start {
