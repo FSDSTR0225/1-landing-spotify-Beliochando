@@ -78,8 +78,8 @@ body {
     background-size: 100% 200px;
     background-repeat: no-repeat;
     padding: 40px 20px;
-    background-position: top center; /* Empieza más arriba de la sección */
-    position: relative; /* Para mover la sección hacia arriba */
+    background-position: top center;
+    position: relative;
     top: -60px;
 }
 
@@ -143,9 +143,9 @@ body {
 
 .button-container {
     display: flex;
-    justify-content: flex-start; /* Centra los botones horizontalmente */
-    gap: 13px;             /* Espacio entre los botones */
-    margin: 25px 0;        /* Separación vertical con otros elementos */
+    justify-content: flex-start;
+    gap: 13px;             
+    margin: 25px 0;        
   }
 
 .hero .content .btn-start,
@@ -187,7 +187,7 @@ body {
 
 .hero .content .btn-start:hover,
 .hero .content .btn-plans:hover {
-    transform: scale(1.04); /* Amplía un 10% al hacer hover */
+    transform: scale(1.04);
 }
 
 .hero .content .conditions {
@@ -379,17 +379,17 @@ body {
 .planes-premium {
     color: white;
     display: flex;
-    justify-content: center; /* Centra todo el bloque */
+    justify-content: center;
     align-items: center;
     max-width: 1100px;
     margin: 10px auto;
     padding: 40px 20px;
-    gap: 50px; /* Espacio entre los elementos */
+    gap: 50px;
 }
 
 .info-container {
     display: flex;
-    justify-content: center; /* Separa izquierda y derecha */
+    justify-content: center;
     align-items: center;
     width: 100%;
     gap: 40px;
@@ -397,8 +397,8 @@ body {
 
 .premium-text {
     text-align: center;
-    width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
-    text-align: center; /* Centra el texto */
+    width: 100%;
+    text-align: center;
     word-wrap: break-word;
     font-size: 32px;
 }
@@ -413,14 +413,14 @@ body {
 
 .premium-list li {
     display: flex;
-    align-items: flex-start;  /* Asegura que los elementos se alineen al principio */
+    align-items: flex-start;
     margin-bottom: 5px;
     line-height: 1.2;
 }
 
 .check-icon {
     font-size: 18px;
-    margin-right: 10px; /* Mantiene el espacio entre el icono y el texto */
+    margin-right: 10px;
     align-self: flex-start;
 }
 
@@ -434,7 +434,7 @@ body {
 .contenedores {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
     max-width: 1200px;
     gap: 20px;
     margin: 0 auto;
@@ -534,7 +534,7 @@ body {
 }
 
 .contenedor .btn, .contenedor2 .btn, .contenedor3 .btn, .contenedor4 .btn {
-    padding: 15px; /* Aquí ajustas el valor del padding para todos */
+    padding: 15px;
 }
 
 button {
@@ -662,3 +662,96 @@ p a:hover {
     font-weight: 600;
 }
 
+
+/*FAQ*/
+
+.FAQ {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+  }
+
+  .FAQ h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 38px;
+    font-weight: 600;
+    padding: 20px 0px 10px 0px;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+  }
+  
+  .FAQ p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+  .asistencia {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+    .asistencia:hover {
+    color: #ffffff; /* Cambia el color al pasar el mouse */
+}
+  
+.accordion-checkbox {
+    display: none;
+}
+
+.accordion-button {
+    cursor: pointer;
+    padding: 20px 10px;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+}
+
+.icon-abierto, .icon-cerrar {
+    display: none;
+}
+
+.accordion-checkbox:checked + .accordion-button .icon-abierto {
+    display: none; /* Oculta el icono de abrir cuando la caja está desplegada */
+}
+
+.accordion-checkbox:not(:checked) + .accordion-button .icon-cerrar {
+    display: none; /* Oculta el icono de cerrar cuando la caja está cerrada */
+}
+
+.accordion-checkbox:not(:checked) + .accordion-button .icon-abierto {
+    display: inline; /* Muestra el icono de abrir cuando la caja está cerrada */
+}
+
+.accordion-checkbox:checked + .accordion-button .icon-cerrar {
+    display: inline; /* Muestra el icono de cerrar cuando la caja está desplegada */
+}
+  
+
+.panel {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+}
+
+.accordion-checkbox:checked + .accordion-button + .panel {
+    display: block;
+    background-color: #1F1F1F;
+    color: #ffffff;
+}
+
+.accordion-button:hover {
+    background-color: #2A2A2A;
+    text-decoration: underline;
+}
