@@ -823,7 +823,7 @@ footer {
 }
 
 .footer-column li {
-    margin-bottom: 25px; /* Modifica el valor para ajustar la separación entre los elementos */
+    margin-bottom: 25px;
 }
 
 .social-icon {
@@ -893,5 +893,5 @@ footer {
 }
 
 .footer-link:hover {
-    color: #1DB954 ! important;
+    color: #1DB954 !important;
 }
